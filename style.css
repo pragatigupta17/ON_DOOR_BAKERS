@@ -1,0 +1,42 @@
+:root{
+    --main-color:rgb(239, 173, 183);
+    --secondary-color:rgb(146, 202, 220);
+    --nav-color:rgb(243, 233, 253);
+    --bg-color:white;
+    --black:#2f4858;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing:border-box ;
+border:none;
+outline: none;
+text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+.body{
+    background-color: var(--bg-color);
+
+}
+.header{
+    background-color: var(--nav-color);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.5rem 7% ;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    /* z-index: 1000; */
+}
+.header .logo img{
+    height:100px;
+    border-radius: 30%;
+
+}
