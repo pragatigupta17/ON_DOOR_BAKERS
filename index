@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>ON DOOR BAKERS</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-
 
 </head>
 <body>
     <!-- header -->
-    <header class="header">
+     <header class="header">
         <a href="#" class="logo"><i class="fas fa-bread-slice"></i>ON DOOR BAKERS</a>
         <nav class="navbar">
             <a href="#home">Home</a>
@@ -29,25 +28,11 @@
             <div id="cart-btn" class="fas fa-shopping-cart"></div>
             <div id="menu-btn" class="fas fa-bars"></div>
         </div>
-
      </header>
      <!-- header end -->
-      
-     <!-- home -->
-      <section class="home">
-        <div class="content">
-            <h1>we bake the world a better place</h1>
-            <h1><span>on door bakers</span></h1>
-           <h1>super delicious and fresh baked goods</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis corporis! Est repellat minima earum asperiores quod quam, placeat qui.</p>
-           <a href="#" class="btn">get started</a>
-        </div>
 
-
-      </section>
-     <!-- home end -->
-      <!-- cart -->
-      <!-- <div class="container">
+      <!-- shopping cart -->
+       <div class="cart-items-container">
         <div id="close-form" class="fas fa-times"></div>
         <h3 class="title">checkout</h3>
 
@@ -87,255 +72,276 @@
             </div>
         </div>
         <a href="#" class="btn">checkout</a>
-       </div> -->
-       <!-- cart end -->
-       <section class="about" id="about">
-        <h1 class="heading"><span>about</span>us</h1>
-        <div class="row">
-            <div class="image">
-                <img src="image/dubai.jpeg" alt=""/>
+       </div>
+       <!-- shopping end -->
+
+       <!-- home -->
+        <section class="home" id="home">
+            <div class="swiper home-slider">
+                <div class="swiper-slide slide" style="background-image: url(image/couunter.jpeg)no-repeat;">
+                    <div class="content">
+                        <h3>we bake the world a better place</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+
+                </div>
             </div>
-            <div class="content">
-                <h3>good things come to those <span>who bake</span> for others</h3>
-                <h3>we are <span> baking </span>for<span> you..!!</span></h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Reiciendis facilis voluptatem quidem quas eum eligendi! Non, 
-                    cumque minima placeat officiis doloremque fugit beatae quidem,
-                     ullam nobis consequuntur, assumenda mollitia fugiat.
-                     <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nulla?</span></p>
-                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, reprehenderit nulla. Aspernatur, at consectetur explicabo et consequuntur debitis ipsa vitae.</p>
-                     <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-      </section>
-       <!-- product -->
-       <section class="product" id="product">
-        <h1 class="heading">our<span>product</span></h1>
-        <div class="box-container">
-            <div class="box">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+
+        </section>
+        <!-- home section end -->
+         <!-- banner-->
+          <section class="banner">
+            <img src="image/browni.jpeg" alt=""/>
+          </section>
+        <!-- end -->
+         <!-- about -->
+          <section class="about" id="about">
+            <h1 class="heading"><span>about</span>us</h1>
+            <div class="row">
                 <div class="image">
-                    <img src="image/icecream.jpg" alt=""/>
+                    <img src="image/dubai.jpeg" alt=""/>
                 </div>
                 <div class="content">
-                    <h3>ice cream</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                    <span class="price">$60.99</span>
-                    <a href="#" class="btn">add to cart</a>
+                    <h3>good things come to those <span>who bake</span> for others</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Reiciendis facilis voluptatem quidem quas eum eligendi! Non, 
+                        cumque minima placeat officiis doloremque fugit beatae quidem,
+                         ullam nobis consequuntur, assumenda mollitia fugiat.
+                         <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nulla?</span></p>
+                         <a href="#" class="btn">read more</a>
                 </div>
             </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/mousecake.webp" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>mousecake</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+          </section>
+          <!-- about end -->
 
+          <!-- product -->
+           <section class="product" id="product">
+            <h1 class="heading">our<span>product</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="image/icecream.jpg" alt=""/>
                     </div>
-                    <span class="price">$50.99</span>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="content">
+                        <h3>ice cream</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="price">$60.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/mousecake.webp" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>mousecake</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="price">$50.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/cake3.jpeg" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>cake</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="price">$50.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/chocolate.jpg" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>dark chocolates</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="price">$50.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/puff.webp" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>puffs</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+
+                        </div>
+                        <span class="price">$50.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/shakes.webp" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>shake</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="price">$70.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/fruitstuff.jpeg" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>fruitstuff</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+
+                        </div>
+                        <span class="price">$60.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/pastry.webp" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>pastry</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+
+                        </div>
+                        <span class="price">$60.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/cocktel2.jpeg" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>drinks</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="price">$60.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/chocolates.jpg" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>chocolates</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="price">$60.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/cake4.webp" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>bd cakes</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="price">$60.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="image/coffee.jpeg" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h3>coffe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+                        </div>
+                        <span class="price">$60.99</span>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/cake3.jpeg" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>cake</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                    <span class="price">$50.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/chocolate.jpg" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>dark chocolates</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                    <span class="price">$50.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/puff.webp" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>puffs</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-
-                    </div>
-                    <span class="price">$50.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/shakes.webp" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>shake</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                    <span class="price">$70.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/fruitstuff.jpeg" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>fruitstuff</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-
-                    </div>
-                    <span class="price">$60.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/pastry.webp" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>pastry</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-
-                    </div>
-                    <span class="price">$60.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/cocktel2.jpeg" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>drinks</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                    <span class="price">$60.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/chocolates.jpg" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>chocolates</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                    <span class="price">$60.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/cake4.webp" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>bd cakes</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                    <span class="price">$60.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="image/coffee.jpeg" alt=""/>
-                </div>
-                <div class="content">
-                    <h3>coffe</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                    <span class="price">$60.99</span>
-                    <a href="#" class="btn">add to cart</a>
-                </div>
-            </div>
-        </div>
-       </section>
-      <!-- product end -->
-        <!-- product end -->
-         <!-- gallery -->
-        <section class="gallery" id="gallery">
+           </section>
+          <!-- product end -->
+           <section class="gallery" id="gallery">
             <h1 class="heading">our<span>gallery</span></h1>
-            <h1 class="heading">upcoming<span> fresh taste</span></h1>
             <div class="gallery-container">
 
                 <a href="image/biscute2.jpg" class="box">
@@ -386,8 +392,9 @@
             </div>
            </section>
            <!-- gallery end -->
-             <!-- weekly pomotion -->
-             <section class="promotion">
+
+           <!-- weekly pomotion -->
+            <section class="promotion">
                 <h1 class="heading">weekly<span>promotions</span></h1>
                 <div class="box-container">
 
@@ -411,14 +418,23 @@
                         <img src="image/cake2.webp" alt="">
                     </div>
 
-                    
+                    <!-- <div class="box">
+                        <div class="content">
+                            <h1>gelly biscute</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Sed aut non sequi? Hic, quod at? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                 Inventore, officiis?</p>
+                        </div>
+                        <img src="image/biscute.jpg" alt="">
+                    </div> -->
                     
 
                 </div>
             </section>
            <!-- weekly pomotion end -->
-             <!-- team -->
-             <section class="team" id="team">
+
+           <!-- team -->
+            <section class="team" id="team">
                 <h1 class="heading">our <span>team</span></h1>
 
                 <div class="box-container">
@@ -488,7 +504,8 @@
                 </div>
             </section>
            <!-- team end -->
-             <!-- parallax -->
+
+            <!-- parallax -->
              <section class="parallax">
                 <h1 class="heading">range of <span>product</span></h1>
                 <div class="box-container">
@@ -530,6 +547,8 @@
                 </div>
              </section>
               <!-- parallax  end -->
+
+             <!-- review -->
               <section class="review" id="review">
                 <h1 class="heading">what our <span>customers</span> say</h1>
                 <div class="box-container">
@@ -586,59 +605,38 @@
 
               </section>
              <!-- review end -->
-              <!-- order -->
+
+             <!-- order -->
               <section class="order" id="order">
                 <h1 class="heading"><span>order</span>now</h1>
-                <div class="image">
-                    <img src="image/ordernow.png" alt="">
+                <div class="row">
+                    <div class="image">
+                        <img src="image/ordernow.png" alt="">
+                    </div>
+                    <form action="">
+                        <div class="inputBox">
+                            <input type="text" placeholder=" first name" >
+                            <input type="text" placeholder="last name" >
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" placeholder="email address" >
+                            <input type="number" placeholder="phone number" >
+
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" placeholder="food name" >
+                            <input type="number" placeholder="how much" >
+
+                        </div>
+                        <textarea placeholder="your address" name="" id="" cols="30" row="10"></textarea>
+                        <input type="submit" value="order now" class="btn">
+                    </form>
                 </div>
-                    
-    <div class="form-container">
-        <h1>Order Now</h1>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
 
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+              </section>
+             <!-- order  end-->
 
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-
-            <div class="form-group">
-                <label for="order">Address:</label>
-                <textarea id="order" name="order" rows="2" required></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="date">Pickup Date:</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-
-            <div class="form-group">
-                <label for="time">Pickup Time:</label>
-                <input type="time" id="time" name="time" required>
-            </div>
-
-            <div class="form-group">
-                <label for="special-requests">Special Requests:</label>
-                <textarea id="special-requests" name="special-requests" rows="3"></textarea>
-            </div>
-
-            <div class="form-group">
-                <button type="submit">Place Order</button>
-            </div>
-        </form>
-    </div>
-        </section>
-
-    <!-- footer --><!-- footer -->
+             <!-- footer -->
               <section class="footer">
                 <div class="box-container">
                     <div class="box">
@@ -673,6 +671,14 @@
               </section>
              <!-- footer end -->
 
+            
+
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/lightGallery-js/1.4.0/js/lightGallery.min.js"></script> -->
+
+<!-- <script>
+    lightGallery(document.querySelector('.gallery.gallery-container'));
+</script> -->
 
     
 </body>
