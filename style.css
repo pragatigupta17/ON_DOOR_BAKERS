@@ -641,6 +641,10 @@ margin: .5rem;
     color:var(--primary-color);
     line-height: 1.6;
 }
+/* .image{
+    width:400px;
+    height:100px;
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -655,19 +659,19 @@ margin: .5rem;
     }
 }
 /* review  end*/
-/* order img */
-/* order img end */
 /* order */
-.body{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} 
+
+
+.doll{
+    width:700px;
+ height:700px;
+ align-content: end;
+
+}
+.do{
+display: flex;
+justify-content: space-around;
+}
 
 .form-container {
     background-color:var(--bg);
