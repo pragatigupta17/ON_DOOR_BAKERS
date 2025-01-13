@@ -26,19 +26,6 @@ html{
     scroll-behavior: smooth;
 
 }
-/* html::-webkit-scrollbar{
-    width:.8rem;
-
-}
-html::-webkit-scrollbar-track{
-    background: transparent;
-
-}
-html::-webkit-scrollbar-thumb{
-    background: var(--primary-color);
-    border-radius: 5rem;
-
-} */
 section{
     padding: 2rem 7%;
 }
@@ -277,9 +264,6 @@ height: 400px;
 
 /* product end */
 /* gallery */
-
-
-/* Gallery Container */
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
@@ -287,8 +271,6 @@ height: 400px;
     padding: 20px;
     /* justify-content: center; */
 }
-
-/* Cards Styling */
 .cards {
     position: relative;
     overflow: hidden;
@@ -308,7 +290,7 @@ height: 400px;
     transition: transform 0.3s ease;
 }
 
-/* Hover Effects */
+
 .cards:hover {
     transform: scale(1.05); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -317,8 +299,6 @@ height: 400px;
 .cards:hover img {
     transform: scale(1.1); 
 }
-
-/* Icons Styling */
 .icons {
     position: absolute;
     top: 50%;
@@ -334,20 +314,17 @@ height: 400px;
 }
 
 .cards:hover .icons {
-    opacity: 1; /* Show icon on hover */
+    opacity: 1; 
 }
 
 
 /* gallery end */
-/* week */
-/* General Styling for the Promotion Section */
+
 .promotion {
     padding: 2rem;
     background-color: #f9f9f9;
     text-align: center;
 }
-
-/* Styling for the Heading */
 .promotion .heading {
     font-size: 3rem;
     color:var(--secondary-color);
@@ -355,10 +332,8 @@ height: 400px;
 }
 
 .promotion .heading span {
-    color:var(--primary-color); /* Highlight color for "promotions" */
+    color:var(--primary-color); 
 }
-
-/* Styling for the Box Container */
 .promotion .box-container {
     display: flex;
     justify-content: center;
@@ -366,8 +341,6 @@ height: 400px;
     flex-wrap: wrap;
     
 }
-
-/* Styling for Each Box */
 .promotion .box {
     background-color: #fff;
     border-radius: 10px;
@@ -381,8 +354,6 @@ height: 400px;
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-/* Styling for the Content Inside the Box */
 .promotion .box .content {
     padding: 1.5rem;
     text-align: center;
@@ -399,8 +370,6 @@ height: 400px;
     color:var(--primary-color);
     line-height: 1.5;
 }
-
-/* Styling for the Image */
 .promotion .box img {
     width: 100%;
     height: 100%;
@@ -477,17 +446,9 @@ margin: .5rem;
 }
 
 /* team  end*/
-/* logo */
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Parallax Section */
 .parallax {
-    /* background-image: url('image/logo2.png'); Replace with your parallax background image */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -496,8 +457,6 @@ margin: .5rem;
     text-align: center;
     color: #fff;
 }
-
-/* Heading */
 .parallax .heading {
     font-size: 4rem;
     margin-bottom: 50px;
@@ -506,20 +465,16 @@ margin: .5rem;
 }
 
 .parallax .heading span {
-    color:var(--secondary-color); /* Highlight color for the span */
+    color:var(--secondary-color); 
 }
-
-/* Box Container */
 .parallax .box-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 60px;
 }
-
-/* Individual Box */
 .parallax .box {
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    background: rgba(255, 255, 255, 0.9); 
     border-radius: 10px;
     overflow: hidden;
     width: 300px;
@@ -530,17 +485,13 @@ margin: .5rem;
 }
 
 .parallax .box:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
+    transform: translateY(-10px); 
 }
-
-/* Image */
 .parallax .box .image img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-
-/* Content */
 .parallax .box .content h3 {
     font-size: 2rem;
     margin: 15px 0;
@@ -575,8 +526,8 @@ margin: .5rem;
     }
 }
 /* logo end */
+
 /* review */
-/* Review Section Styling */
 .review {
     padding: 2rem 9%;
     background-color: #f9f9f9;
@@ -659,6 +610,7 @@ margin: .5rem;
     }
 }
 /* review  end*/
+
 /* order */
 
 
@@ -734,7 +686,6 @@ button:hover {
     background-color:var(--primary-color);
 }
 /* footer */
-/* Footer Section */
 .footer {
     background-color:var(--bg);
     color:var(--black);
