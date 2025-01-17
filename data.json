@@ -1,0 +1,140 @@
+{
+    "order1":[
+        {
+            "Sno": 1,
+            "imageurl":"image/icecream.jpg" ,
+           "starts":"5",
+            "name": "icecream",
+            "quantity": 2,
+            "price": 60.99,
+            "total": 121.98
+        },
+    
+        {
+            "Sno": 2,
+            "imageurl":"image/mousecake.webp" ,
+           "starts":"5",
+            "name": "mousecake",
+            "quantity": 1,
+            "price": 59,
+            "total": 59
+        },
+
+        {
+            "Sno": 3,
+            "imageurl":"image/cake2.webp" ,
+           "starts":"5",
+            "name": "cake",
+            "quantity": 1,
+            "price":399 ,
+            "total": 399
+        },
+        {
+            "Sno": 4,
+            "imageurl":"image/chocolate.jpg" ,
+           "starts":"5",
+            "name": " dark chocolate",
+            "quantity": 2,
+            "price":200,
+            "total":400
+        },
+        {
+            "Sno": 5,
+            "imageurl":"image/puff.webp" ,
+           "starts":"5",
+            "name": "puff",
+            "quantity": 3,
+            "price":100,
+            "total":300
+        },
+        {
+            "Sno": 6,
+            "imageurl":"image/shakes.webp" ,
+           "starts":"5",
+            "name": "shake",
+            "quantity": 3,
+            "price":99,
+            "total":297
+        },
+        {
+            "Sno": 7,
+            "imageurl":"image/fruitstuff.jpeg" ,
+           "starts":"5",
+            "name": "fruitstuff",
+            "quantity":4,
+            "price":150,
+            "total": 600
+        },
+        {
+            "Sno": 8,
+            "imageurl":"image/pastry.webp" ,
+           "starts":"5",
+            "name": "pastry",
+            "quantity": 1,
+            "price":120,
+            "total": 120
+        },
+        {
+            "Sno": 9,
+            "imageurl":"image/cocktel2.jpeg" ,
+           "starts":"5",
+            "name": "drink",
+            "quantity": 2,
+            "price":99,
+            "total":198
+        }
+    ]
+    },
+
+
+    {
+        "form":[
+            {
+                
+                "order_id": 1,
+                "name":"pragati",
+                "email":"prag@gmail.com",
+                "phone": 1234567890,
+                "address":"indore",
+                "order_date": "2025-23-01",
+                "order_time":7,
+                "status": "lorembvhjghkjhvhgfjh"
+            }
+            {
+                
+                "order_id": 2,
+                "name":"misty",
+                "email":"misty@gmail.com",
+                "phone": 9875567890,
+                "address":"bhopal",
+                "order_date": "2025-24-01",
+                "order_time":5,
+                "status": "ghkjhvhgfjh"
+            }
+            {
+                
+                "order_id": 3,
+                "name":"pragatigupta",
+                "email":"pragupta@gmail.com",
+                "phone": 10987654543,
+                "address":"ujjain",
+                "order_date": "2025-02-02",
+                "order_time":4,
+                "status": "lorembvhjghkjhvhgfjh"
+            }
+            {
+                
+                "order_id": 1,
+                "name":"sajal",
+                "email":"sazal@gmail.com",
+                "phone": 770923456576,
+                "address":"fbd",
+                "order_date": "2025-30-01",
+                "order_time":6,
+                "status": "mnbvcxszawserftghjuytredcvbgtfdswertyuio"
+            }
+                
+
+        ]
+
+    }
