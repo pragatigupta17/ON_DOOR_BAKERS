@@ -1,0 +1,117 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ON DOOR BAKERS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="logo">
+      <i class="fas fa-bread-slice"></i>ON DOOR BAKERS</a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#product">product</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#order">Order</a>
+      </nav>
+      
+      <div class="icon" onclick="addtocart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="content">
+        <h1>we bake the world a better place</h1>
+        <h1><span>on door bakers</span></h1>
+        <h1>super delicious and fresh baked goods</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          blanditiis corporis! Est repellat minima earum asperiores quod quam,
+          placeat qui.
+        </p>
+        <a href="#" class="btn">get started</a>
+      </div>
+    </section>
+    </body>
+    </html> {% endcomment %}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart Page</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <div class="container">
+    <div class="product-info">
+      <div class="product-image">
+        <img src="product-image.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h2 class="product-name">Product Name</h2>
+        <p class="product-description">Product Description</p>
+        <p class="product-price">$19.99</p>
+        <div class="quantity">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" value="1">
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <div class="cart-summary">
+      <h2>Cart Summary</h2>
+      <ul>
+        <li>
+          <span>Product Name</span>
+          <strong>$19.99</strong>
+        </li>
+        <li>
+          <span>Subtotal</span>
+          <strong>$19.99</strong>
+        </li>
+        <li>
+          <span>Tax (8%)</span>
+          <strong>$1.60</strong>
+        </li>
+        <li>
+          <span>Total</span>
+          <strong>$21.59</strong>
+        </li>
+      </ul>
+    </div>
+    <div class="cta-buttons">
+      <button class="cta-button update-cart">Update Cart</button>
+      <button class="cta-button checkout">Checkout</button>
+    </div>
+  </div>
+</body>
+</html>

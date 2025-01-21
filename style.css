@@ -111,13 +111,11 @@ section{
 .home{
     width: auto;
   height: 700px;
-  /* padding: auto; */
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   background-image: url(/image/couunter.jpeg);
   background-repeat: no-repeat;
   background-position: center ;
@@ -127,7 +125,6 @@ section{
 .home .content{
 width: auto;
   height: 700px;
-  /* padding: auto; */
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -138,7 +135,6 @@ width: auto;
 .home .content h1{
 font-size: 50px;
   letter-spacing: 3px;
-  /* margin-left: 50px; */
   display: flex;
   color:var(--white);
 }
@@ -146,7 +142,6 @@ font-size: 50px;
     font-size:medium;
     color:var(--white);
     letter-spacing: 2px;
-    /* margin: 50px; */
     display:flex ;
 }
 

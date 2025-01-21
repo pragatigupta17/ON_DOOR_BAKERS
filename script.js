@@ -1,29 +1,29 @@
-cart()
-async function cart(){
+// cart()
+// async function cart(){
 
-    let data = await fetch("http://localhost:3000/order1");
-    let response = await data.json();
-    console.log(response);
-    let all_data=response.map((e)=>{
-        return`
-         <div class="box">
-          <div class="image">
-            <img src=${e.imageurl} alt="" />
-          </div>
-          <div class="content">
-            <h3>${e.name}</h3>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <span class="price">${e.price}rs</span>
-            <a href="#" class="btn">add to cart</a>
-          </div>
-        </div>`  
-    })
+//     let data = await fetch("http://localhost:3000/order1");
+//     let response = await data.json();
+//     console.log(response);
+//     let all_data=response.map((e)=>{
+//         return`
+//          <div class="box">
+//           <div class="image">
+//             <img src=${e.imageurl} alt="" />
+//           </div>
+//           <div class="content">
+//             <h3>${e.name}</h3>
+//             <div class="stars">
+//               <i class="fas fa-star"></i>
+//               <i class="fas fa-star"></i>
+//               <i class="fas fa-star"></i>
+//               <i class="fas fa-star"></i>
+//               <i class="fas fa-star"></i>
+//             </div>
+//             <span class="price">${e.price}rs</span>
+//             <a href="#" class="btn">add to cart</a>
+//           </div>
+//         </div>`  
+//     })
 
     let set=document.querySelector(".box-container")
     console.log(set.innerHTML)
@@ -59,3 +59,5 @@ function information(){
 
    console.log(information)
 }
+
+
