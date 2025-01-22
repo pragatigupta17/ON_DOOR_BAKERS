@@ -1,29 +1,30 @@
-// cart()
-// async function cart(){
+cart()
+async function cart(){
 
-//     let data = await fetch("http://localhost:3000/order1");
-//     let response = await data.json();
-//     console.log(response);
-//     let all_data=response.map((e)=>{
-//         return`
-//          <div class="box">
-//           <div class="image">
-//             <img src=${e.imageurl} alt="" />
-//           </div>
-//           <div class="content">
-//             <h3>${e.name}</h3>
-//             <div class="stars">
-//               <i class="fas fa-star"></i>
-//               <i class="fas fa-star"></i>
-//               <i class="fas fa-star"></i>
-//               <i class="fas fa-star"></i>
-//               <i class="fas fa-star"></i>
-//             </div>
-//             <span class="price">${e.price}rs</span>
-//             <a href="#" class="btn">add to cart</a>
-//           </div>
-//         </div>`  
-//     })
+    let data = await fetch("http://localhost:3000/order1");
+    let response = await data.json();
+    console.log(response);
+    let all_data=response.map((e)=>{
+        return`
+         <div class="box">
+          <div class="image">
+            <img src=${e.imageurl} alt="" />
+          </div>
+          <div class="content">
+            <h3>${e.name}</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="price">${e.price}rs</span>
+            <a href="#" class="btn" onClick="addtocartbtn('${e.id}')">add to cart</a>
+          </div>
+        
+        </div>`  
+    })
 
     let set=document.querySelector(".box-container")
     console.log(set.innerHTML)
@@ -61,3 +62,53 @@ function information(){
 }
 
 
+
+
+
+
+// cart of this add to cart 
+
+let  arr=[];
+function addtocartbtn(e){
+    arr.push(e);
+    console.log(e)
+    console.log(arr)
+    displayAdd_to_bag()
+    let data=localStorage.setItem("add_to_cart",JSON.stringify(arr))
+}
+
+function displayAdd_to_bag(){
+    let cart=document.querySelector(".icon span")
+    let leght =arr.length
+    cart.innerHTML=leght;
+   
+    // console.log(cart)
+}
+// cart of this add to cart
+
+
+// get_data_add_to_cart()
+
+
+
+
+function filter(){
+    let data=JSON.parse(localStorage.getItem("add_to_cart"));
+    console.log(data)
+    // for(let i=0;i<data.length;i++){
+    //     console.log(data[i])
+    // }
+}
+
+filter()
+
+async function get_data_add_to_cart(){
+    let data=JSON.parse(localStorage.getItem("add_to_cart"));
+    // console.log(data)
+
+    let data_info=await fetch("http://localhost:3000/order1");
+    let response =await data_info.json();
+    let select_data =response.map((e)=>{return e.id===data})
+    console.log(select_data)
+}
+get_data_add_to_cart()
