@@ -102,13 +102,3 @@ function filter(){
 
 filter()
 
-async function get_data_add_to_cart(){
-    let data=JSON.parse(localStorage.getItem("add_to_cart"));
-    // console.log(data)
-
-    let data_info=await fetch("http://localhost:3000/order1");
-    let response =await data_info.json();
-    let select_data =response.map((e)=>{return e.id===data})
-    console.log(select_data)
-}
-get_data_add_to_cart()
